@@ -1,0 +1,316 @@
+/*==============================
+Template name: Personala
+Template URI: http://www.innovationplans.com/idesign/personala/
+Author: Piash
+Author URI: https://piash.me
+Version: 1.0
+Description: An awsome portfolio website
+Support: piashobayead@gmail.com
+
+==============================*/
+/*==============================
+
+CSS INDEX
+----------
+1. Google fonts
+2. Common Css
+3. Reusable Components
+4. Header Section
+5. About section
+6. Service section
+7. Testimonial Section
+8. Contact Section
+9. footer Section
+
+==============================*/
+
+/* 1. Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans:wght@200;400;700&display=swap');
+
+/* 2. Common Css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    color: #fff;
+    background: #131414;
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    font-family:'Open Sans', sans-serif;
+}
+a:link,
+a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Josefin Sans', sans-serif;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h4 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 1.5rem;
+    color: #a3a3a3;
+line-height: 1.6;
+word-spacing: 1px;
+}
+/* 3. Reusable Components*/
+.row {
+    max-width: 122rem;
+    margin:auto;
+}
+.btn {
+    width: 12rem;
+    background: #C49B66;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .7rem 0;
+    border: .2rem solid transparent;
+    transition: .5s;
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+
+/* 4. Header Section*/
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(img/hero.jpg) no-repeat center top / cover;
+    height: 97rem;
+    width: 100%;
+    position: relative;
+}
+.start-menu-bar p {
+    list-style-type: none;
+    color: #fff;
+    font-size: 2rem;
+    font-family:'Josefin Sans', sans-serif;
+    position: absolute;
+    margin-top: 3rem;
+}
+#hero .start-menu-bar ul {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 3rem;
+}
+#hero .start-menu-bar .menu ul li a{
+    color: #fff;
+    font-family:'Open Sans', sans-serif;
+    margin-right: 2rem;
+}
+#hero .start-menu-bar .menu ul li a:hover {
+    color: #C49B66;
+    transition: .5s;
+}
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.hero-text-box h3 {
+    font-size: 4rem;
+    font-weight: 200;
+}
+.hero-text-box span {
+    font-size: 7rem;
+    font-weight: 200;
+}
+/* 5. About section*/
+#about-section {  
+    position: relative;
+    height: 63rem;
+}
+#about-section .about-grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+}
+#about-section .about-grid-items img{
+    height: 45rem;
+}
+#about-section .about-grid-items .social-icons ul li{
+    font-size: 1.5rem;
+    list-style-type: none;
+    padding: 0 1rem;
+    display: inline-block;  
+    margin-top: 3.5rem;
+}
+#about-section .about-grid-items .social-icons ul li a {
+    color: #fff;
+    background: transparent;
+    border: .1rem solid #fff;
+    padding: .5rem .7rem ;
+}
+#about-section .about-grid-items .social-icons ul li a:hover {
+    background: #C49B66;
+    transition: .5s;
+}
+#about-section .about-grid-items .full-btn:hover {
+    background: transparent;
+    color: #C49B66;
+    border: .2rem solid #C49B66;
+    transition: .2s;
+}
+#about-section .about-grid-items .btn-cv {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #C49B66;
+    border: .2rem solid #C49B66;
+}
+#about-section .about-grid-items .btn-cv:hover {
+    color: #fff;
+    background:#C49B66;
+    transition: .2s;
+    border: .2rem solid #C49B66;
+}
+.btn .full-btn,
+.btn-cv {
+    margin-top: 5rem;
+}
+/* 6. Service section */
+#service-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/service.jpg) no-repeat center top / cover fixed;
+    height: 80rem;
+}
+#service-section h2 {
+    text-align: center ;
+    margin-bottom: 5rem;
+}
+#service-section .service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:4rem
+}
+#service-section .service-grid .service-grid-items i {
+    margin-bottom: 3rem;
+}
+#service-section .service-grid .service-grid-items {
+    font-size: 4rem;
+    margin-bottom: 10rem;
+    display: inline-block;
+    text-align: center;
+}
+/* 7. Testimonial Section */
+
+#testimonial {
+    margin-top: 10rem;
+    height: 50rem;
+}
+.testimonial-section i{
+    font-size: 5rem;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.testimonial-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.testimonial-section p {
+    text-align: center;
+    font-size: 1.7rem;
+}
+.testimonial-section h5 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+
+}
+/* 8. Contact Section */
+#contact {
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/contact.jpg) no-repeat center top / cover fixed;
+    height: 85rem;
+}
+#contact .contact-text {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+#contact .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+#contact .contact-grid input {
+    width: 100%;
+    background: rgba(10, 10, 10, 0.4);
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: .1rem solid rgba(255, 255, 255, 0.1);
+}
+#contact .subject input {
+    width: 100%;
+    background: rgba(10, 10, 10, 0.4);
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: .1rem solid rgba(255, 255, 255, 0.1);
+    margin-top: 2.5rem;
+}
+#contact .contact-grid-message textarea {
+    width: 100%;
+    height: 15rem;
+    background: rgba(10, 10, 10, 0.4);
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: .1rem solid rgba(255, 255, 255, 0.1);
+    margin-top: 2.5rem;
+
+}
+#contact .contact-btn {
+    width: 18rem;
+    font-size: 1.4rem;
+}
+#contact .contact-btn:hover {
+    background: transparent;
+    border: .2rem solid #C49B66;
+    color: #C49B66;
+    transition: .5s;
+}
+#contact .phone-grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    font-size: 1.6rem;
+}
+#contact .phone-grid i {
+    font-size: 2.5rem;
+    color: #C49B66;
+}
+#contact .phone-grid span {
+    margin-left: .5rem;
+}
+/* Footer Section */
+
+#footer {
+    height: 11rem;
+    position: relative;
+}
+#footer .footer-section p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50% , -50%);
+    font-size: 1.3rem;
+}

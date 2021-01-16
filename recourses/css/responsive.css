@@ -1,0 +1,88 @@
+@media screen and (max-width:1200px) {
+    .row {
+        max-width: 100%;
+        margin: 0 5rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    .hero-text-box span{
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width:980px){
+    #about-section {
+        height: 67rem;
+    }
+}
+@media screen and (max-width:768px) {
+    #about-section {
+        height: 100rem;
+    }
+    .hero-text-box span {
+        font-size: 4.5rem;
+    }
+    #about-section .about-grid {
+        position: relative;
+        grid-template-columns: 1fr;
+    }
+    .about-grid-items {
+        position: absolute;
+    }
+    .about-grid-ux {
+        margin-top: 55rem;
+    }
+}
+@media screen and (max-width:600px) {
+    html, body {
+        color: #fff;
+        font-size: 60.5%;
+    }
+    #hero {
+        height: 77rem;
+    }
+    .start-menu-bar p {
+        display: none;
+    }
+    .hero-text-box span {
+        font-size: 3.7rem;
+    }
+    #about-section {
+        height: 106rem;
+    }
+    #service-section {
+        height: 120rem;
+    }
+    #service-section .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #contact .phone-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:480px) {
+    html, body {
+        color: #fff;
+        font-size: 50.5%;
+    }
+    .hero-text-box h3 {
+        font-size: 3.9rem;
+    }
+    .hero-text-box span {
+        font-size: 3.6rem;
+    }
+}
+@media screen and (max-width:375px) {
+    html, body {
+        color: #fff;
+        font-size: 40.5%;
+    }
+    #hero {
+        height: 105rem;
+    }
+    .hero-text-box h3 {
+        font-size: 3.8rem;
+    }
+    .hero-text-box span {
+        font-size: 3.4rem;
+    }
+}
